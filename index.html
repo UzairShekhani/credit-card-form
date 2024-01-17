@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Credit Card Form</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="credit-card" id="card">
+        <div class="card-front">
+          <div class="branding">
+            <img src="https://brandslogos.com/wp-content/uploads/images/large/chip-logo.png" class="chip-img" />
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" class="visa-logo" />
+          </div>
+          <div class="card-number">
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+            <div>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+              <span class="card-number-display">_</span>
+            </div>
+          </div>
+          <div class="details">
+            <div>
+              <span>Card Holder</span>
+              <span id="card-holder-name">Your Name Here</span>
+            </div>
+            <div>
+              <span>Expires</span>
+              <span id="validity">06/28</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-back">
+          <div class="black-strip"></div>
+          <div class="white-strip">
+            <span>CVV</span>
+            <div id="cvv-display"></div>
+          </div>
+          <img src="https://1000logos.net/wp-content/uploads/2021/11/VISA-logo.png" class="visa-logo" />
+        </div>
+      </div>
+      <form>
+        <label for="card-number">Card Number</label>
+        <input type="number" id="card-number" placeholder="1234123412341234" />
+
+        <label for="card-holder">Card Holder:</label>
+        <input type="text" id="card-name-input" placeholder="Your Name" />
+
+        <div class="date-cvv">
+          <div>
+            <label for="validity">Expires On:</label>
+            <input type="date" id="validity-input" />
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="number" id="cvv" placeholder="***" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
